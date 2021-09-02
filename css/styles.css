@@ -78,14 +78,6 @@ body button:active {
   color: #000000;
 }
 
-.navi-bar .link-contact:hover,
-.navi-bar .link-contact:focus {
-  color: var(--hover-color);
-  /* transform: color; */
-}
-
-
-
 .main-navi {
   display: flex;
   align-items: center;
@@ -153,7 +145,7 @@ body button:active {
   color: var(--hover-color);
 }
 
-.navi-bar .link-contact {
+.contact-block .contact-block__link {
   text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
@@ -174,7 +166,7 @@ body button:active {
   transition-timing-function: var(--cube);
 }
 
-.navi-bar {
+.contact-block {
   display: flex;
   margin-left: auto;
   margin-top: 0;
@@ -184,9 +176,14 @@ body button:active {
   list-style: none;
 }
 
-.navi-bar .contact:not(:last-child) {
+.contact-block .contact-block__item:not(:last-child) {
   margin-right: 50px;
 }
+
+.contact-block__link:hover,
+.contact-block__link:focus {
+  color: var(--hover-color);
+ }
 
 .link-phone {
   display: flex;
@@ -616,7 +613,7 @@ margin-bottom: 10px;
   display: flex;
 }
 
-.skills-main {
+.competence {
   list-style: none;
 
   display: flex;
@@ -625,16 +622,16 @@ margin-bottom: 10px;
   padding: 0;
 }
 
-.skills-item {
+.competence__item {
   margin-right: 30px;
   width: 270px;
 }
 
-.skills-item:last-child {
+.competence__item:last-child {
   margin-right: 0;
 }
 
-.icon-pic {
+.competence__pic {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -646,7 +643,7 @@ margin-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.skills-list {
+.competence__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
@@ -657,7 +654,7 @@ margin-bottom: 10px;
   margin-bottom: 10px;
 }
 
-.skills-content {
+.competence__text {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
